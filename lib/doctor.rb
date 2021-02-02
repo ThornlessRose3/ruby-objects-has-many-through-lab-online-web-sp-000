@@ -25,7 +25,7 @@ class Doctor
     doc_patients =[]
     Appointment.all.select do |p|
       if p.doctor == self
-        doc_patients << p.patients
+        doc_patients << p.patient
       end
     end
     doc_patients.uniq!
