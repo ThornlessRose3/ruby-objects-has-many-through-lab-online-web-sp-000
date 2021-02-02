@@ -19,7 +19,6 @@ class Doctor
   
   def appointments
     Appointment.all.select{ |d| d.doctor == self}
-    end
   end
   
   def patients
@@ -32,6 +31,5 @@ class Doctor
     doc_patients.uniq!
     doc_patients
   end
-    
   
 end
